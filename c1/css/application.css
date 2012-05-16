@@ -1,0 +1,79 @@
+body {
+  margin-top: 60px;
+}
+
+#homepage_banner h1 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0px 2px 3px #000;
+}
+
+#homepage_banner p {
+  color: #f0f0f0;
+  text-shadow: 0px 2px 3px #000;
+}
+
+#homepage_banner .btn-large {
+  font-size: 40px;
+}
+
+#homepage_banner .hero-unit {
+  /*background:url(../img/banner_n2.png) no-repeat 0 20%;*/
+}
+
+.pull-center {
+  text-align: center;
+}
+
+.food-menu-list .thumbnails .width_260 { width: 260px; }
+
+.food-menu-list .thumbnails .thumbnail {
+  padding: 0;
+  height: 350px;
+  box-shadow: 0 2px 3px #ccc;
+}
+
+.food-menu-list .thumbnails .thumbnail > .badge {
+  position: absolute;
+  font-size: 20px;
+  box-shadow: 0px 2px 3px #000;
+  text-shadow: 0px 2px 3px #000;
+  margin-top: 10px;
+  font-weight: normal;
+  padding: 5px;
+  margin-left: 10px;
+  color: #fff;
+  opacity: 0.7;
+}
+
+.food-menu-list .thumbnails .thumbnail img {
+  height: 180px;
+}
+
+.food-menu-list .thumbnails .thumbnail .form-inline .price {
+  font-size: 18px;
+}
+
+.food-menu-list .thumbnails .thumbnail .form-inline .input-small {
+  width: 50px;
+}
+
+#menu .tabbable {
+  margin-left: 0;
+}
+
+.food-menu-small-list .well {
+  padding: 5px;
+}
+
+.food-menu-small-list .price {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #888;
+}
+
+.food-menu-small-list .input-small {
+  width: 30px;
+  margin-right: 10px;
+}
