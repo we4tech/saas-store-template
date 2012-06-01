@@ -1,0 +1,30 @@
+%section.review-form
+  .page-header
+    %h3
+      Write your Review
+
+  %form.form-inline
+    %fieldset
+      .control-group
+        .controls
+          %input.input-xlarge{type: 'text', placeholder: 'Enter your name'}
+
+      .control-group
+        .controls
+          %label.checkbox.inline
+            %input{type: 'radio'}
+            %i.icon-thumbs-up
+            Love it
+
+
+          %label.checkbox.inline
+            %input{type: 'radio'}
+            %i.icon-thumbs-down
+            Dislike it
+
+      .control-group
+        %textarea.input-xlarge{rows: 4, placeholder: 'Enter your review'}
+
+      %button.btn.btn-primary
+        %i.icon-pencil.icon-white
+        Save Your Review

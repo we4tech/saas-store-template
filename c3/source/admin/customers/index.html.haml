@@ -1,0 +1,35 @@
+.tabbable
+  = partial 'layouts/admin/tabs', :locals => {el_id: 'tab_customers'}
+
+  .tab-content
+    .tab-pane.active
+      .page-header
+        %h1 Customers
+
+      %table.table.table-bordered
+        %thead
+          %tr
+            %th{colspan: 4, style: 'text-align: right;'}
+              %a{href: '#'}
+                Export
+                %i.icon-share
+        %tbody
+          %tr
+            %th Name
+            %th Address
+            %th Ordered Items
+            %th
+
+
+          %tr
+            %td= lorem.name
+            %td= lorem.sentence
+            %td
+              %ul
+                - 3.times.each do
+                  %li= link_to lorem.name, '#'
+                %a{href: '#'} More previous orders...
+
+            %td
+              %a.btn{href: '#'}
+                %i.icon-envelope{rel: 'tooltip', title: 'Send Email'}

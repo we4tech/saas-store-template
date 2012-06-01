@@ -1,0 +1,46 @@
+/ Sections
+%section#menu
+  %ul.breadcrumb
+    %li
+      %a{:href => "/homepage"} Home
+      %span.divider /
+
+    %li
+      %a{:href => "/products/"} Products
+      %span.divider /
+    %li.active Checkout
+
+  .page-header
+    %h1 Checkout Your Plate
+  .tabbable.span9.tabs-left
+    %ul.nav.nav-tabs
+      %li.active
+        %a#link_confirm_items{:href => "#confirm-items", 'data-toggle' => 'tab'}
+          %span.badge.badge-warning #1
+          Confirm Items
+      %li
+        %a#link_delivery{:href => "#delivery", 'data-toggle' => 'tab'}
+          %span.badge.badge-warning #2
+          Delivery Address
+      %li
+        %a#link_payment{:href => "#payment", 'data-toggle' => 'tab'}
+          %span.badge.badge-warning #3
+          Payment
+
+    %form.form-horizontal
+      .tab-content
+        #confirm-items.tab-pane.active
+          = partial 'checkout/confirm_items'
+
+        #delivery.tab-pane
+          = partial 'checkout/delivery_address'
+
+        #payment.tab-pane
+          = partial 'checkout/payment'
+
+  .span2.food-menu-side-list
+    %h3 Special Offers
+
+    .thumbnails
+      - 3.times.each do
+        = partial 'products/product_thumb', :locals => {discount: true}

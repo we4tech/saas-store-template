@@ -1,0 +1,78 @@
+.tabbable
+  = partial 'layouts/admin/tabs', :locals => {el_id: 'tab_option_types'}
+
+  .tab-content
+    .tab-pane.active
+      .span8
+        .page-header
+          %h1 Option Types
+
+        .admin-option-types
+          %table.table.table-bordered
+            %thead
+              %tr
+                %th{colspan: 4, style: 'text-align: right;'}
+                  %a{href: '#'}
+                    Export
+                    %i.icon-share
+              %tr
+                %th Name
+                %th Items Included
+                %th Items Quantity
+                %th Tools
+
+            %tbody
+              - 6.times.each do
+                %tr
+                  %td{rowspan: 5}= lorem.name
+                  %td= lorem.name
+                  %td 1
+                  %td{rowspan: 5}
+                    .btn-group
+                      %a.btn{href: '#'}
+                        %i.icon-pencil
+                        Edit
+
+                      %a.btn.btn-danger{href: '#'}
+                        %i.icon-remove
+                        Delete
+
+                - 4.times.each do
+                  %tr
+                    %td= lorem.name
+                    %td= rand(5)
+
+
+
+      .span4.well
+        .page-header
+          %h3 Create Option Type
+
+        %form
+          %fieldset
+            .control-group
+              %label.control-label Name
+              .controls
+                %input.input-xlarge{placeholder: 'Enter name'}
+            .control-group
+              %label.control-label Items
+              .controls.well
+                - 5.times.each do
+                  %input.input-medium{type: 'text', placeholder: 'Enter name'}
+                  %input.input-small{type: 'number'}
+                  %button.btn.btn-mini.btn-danger
+                    %i.icon-remove.icon-white
+
+                  %hr/
+
+
+                .clearfix
+
+            .control-group
+              %label.control-label Quantity
+              .controls
+                %input.input-small{type: 'number', placeholder: 'Start Date'}
+
+
+            .form-actions
+              %button.btn.btn-primary{type: 'submit'} Add Category

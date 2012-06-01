@@ -1,0 +1,10 @@
+%section.related-items
+  .page-header
+    %h3 Similar Items
+  %ul.thumbnails
+    - (1..6).each do |i|
+      %li
+        %a.thumbnail{href: '#'}
+          = image_tag "f#{i}.jpg"
+          .price $40
+          .caption= lorem.name

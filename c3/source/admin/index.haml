@@ -1,0 +1,52 @@
+%header
+  .hero-unit
+    %h1 Welcome to Deli Traders Express Store
+    %p Now you can explore your customers and orders online
+
+.tabbable
+  = partial 'layouts/admin/tabs', :locals => {el_id: 'tab_dashboard'}
+
+  .tab-content
+    .tab-pane.active
+      %section.well.summary.span5
+        %ul
+          %li
+            %a{href: '#'}
+              .count 5
+              New Orders
+
+          %li
+            %a{href: '#'}
+              .count 20
+              New Reviews
+
+
+          %li
+            %a{href: '#'}
+              .count 50
+              Menu Items
+
+        = image_tag 'chart.png'
+
+      %section.recent-activities.span6
+        .page-header
+          %h4 Recent Activities
+
+        %ul
+          %li
+            %i.icon-ok
+            %strong Delivered
+            Order
+            %a{href: '#'} #4434
+            By Karim
+
+          %li
+            %i.icon-plus
+            %strong Added
+            New Menu
+            %a{href: '#'} #4434
+            By Karim
+
+
+
+

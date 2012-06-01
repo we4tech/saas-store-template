@@ -1,0 +1,99 @@
+:ruby
+  product = {
+    name: lorem.name,
+    description: lorem.paragraphs(5)
+  }
+/ Sections
+%section
+  %ul.breadcrumb
+    %li
+      %a{:href => "#"} Home
+      %span.divider /
+
+    %li
+      %a{:href => "#"} Food Menu
+      %span.divider /
+    %li.active= product[:name]
+
+%section#products
+  .span7{style: 'margin-left: 0'}
+    .page-header
+      %h1= product[:name]
+
+    .thumbnail.overflow-image
+      = image_tag 'f1.jpg'
+      .box-add-to-cart
+        %form.form-inline.span3
+          %input.input-small.quantity{:placeholder => "Quantity", :size => "2", :type => "number"}/
+          %br/
+          %span.multiply X
+          %strong.price 20$
+          %br/
+          %br/
+          %button.btn.btn-inverse.btn-large{:type => "submit"}
+            Add to Plate
+
+      .tools-nav
+        %ul.nav.nav-list
+          %li.nav-header
+            Tools
+
+          %li
+            %a{href: '#'}
+              %i.icon-star
+              10 Likes
+
+          %li
+            %a{href: '#'}
+              %i.icon-comment
+              5 Reviews
+
+          %li.prep-time
+            %i.icon-time
+            %acronym{rel: 'tooltip', title: 'Food preparation time'} 30-40 min
+
+          %li
+            %a{href: '#'}
+              %i.icon-user
+              %acronym{rel: 'tooltip', title: '30 People bought this time'} 30 Sold!
+
+
+          %li
+            %a{href: '#'}
+              %i.icon-print
+              Print
+
+          %li
+            %a{href: '#'}
+              %i.icon-share
+              Share
+
+        .clearfix
+
+      .clearfix
+
+      %p.caption
+        = product[:description]
+
+    %p &nbsp;
+    = partial 'products/reviews'
+
+
+  .span5.food-menu-small-list
+    = partial 'products/nutrition'
+    = partial 'products/related_photos'
+    = partial 'products/related_items'
+    = partial 'products/review_form'
+
+    %section.tags
+      .page-header
+        %h4 Tags
+      - 5.times.each do
+        %span.label.label-info
+          = link_to lorem.first_name, '#'
+
+  .clearfix
+  %p &nbsp;
+
+.clearfix
+%p &nbsp;

@@ -1,0 +1,34 @@
+%ul.nav.nav-tabs
+  %li#tab_dashboard
+    %a{href: '/admin'} Dashboard
+  %li#tab_customers
+    %a{href: '/admin/customers/'} Customers
+  %li#tab_menus
+    %a{:href => "/admin/products/"} Menus
+  %li#tab_categories
+    %a{:href => "/admin/categories/"} Categories
+  %li#tab_option_types
+    %a{:href => "/admin/option_types/"} Option Types
+  %li#tab_orders
+    %a{href: '/admin/orders'} Orders
+  %li#tab_invoices
+    %a{href: '/admin/invoices'}
+      %i.icon-book
+      Invoices
+  %li#tab_resources
+    %a{href: '/admin/resources'}
+      %i.icon-file
+      Resources
+  %li#tab_reviews
+    %a{href: '/admin/resources'}
+      %i.icon-comment
+      Reviews
+
+
+:javascript
+  if (typeof(window.laterTasks) == 'undefined')
+    window.laterTasks = [];
+
+  window.laterTasks.push(function() {
+    jQuery("##{el_id}").addClass('active');
+  });

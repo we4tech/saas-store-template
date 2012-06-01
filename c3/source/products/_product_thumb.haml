@@ -1,0 +1,14 @@
+.thumbnail
+  - if defined?(discount) && discount
+    %span.badge.badge-warning.pull-right #{(rand * 100).ceil}% Off
+
+  = image_tag "f#{(rand * 6).ceil}.jpg"
+  .caption
+    %h5= link_to lorem.name, '/products/show.haml'
+    %p.muted= truncate(lorem.sentence, :length => 60)
+    %form.form-inline.well
+      %strong.price 20$
+      %i.icon-remove
+      %input.input-small{:placeholder => "Quantity", :size => "2", :type => "number"}/
+      %button.btn.btn-small.btn-inverse{:type => "submit"}
+        Add To Plate

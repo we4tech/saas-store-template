@@ -1,0 +1,19 @@
+%form.filter-form.well
+  .control-group
+    %label.control-label Choose File
+    .controls
+      %input.input-small{placeholder: 'Start Date', type: 'file'}
+
+  .control-group
+    %label.control-label Types
+    .controls
+      %label.checkbox
+        %input{type: 'checkbox'}
+        Image
+      %label.checkbox
+        %input{type: 'checkbox'}
+        File
+
+  .form-actions
+    %button.btn.btn-primary{type: 'submit'}
+      Upload Media

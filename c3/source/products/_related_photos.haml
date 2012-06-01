@@ -1,0 +1,8 @@
+%section.related-photos
+  .page-header
+    %h3 Photos
+  %ul.thumbnails
+    - (1..6).each do |i|
+      %li
+        %a.thumbnail{href: '#'}
+          = image_tag "f#{i}.jpg"

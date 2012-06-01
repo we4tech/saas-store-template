@@ -1,0 +1,51 @@
+body {
+  margin-top: 60px;
+}
+
+.summary {
+  width: 100%;
+  display: table;
+
+  ul {
+    list-style: none;
+    display: table-row;
+
+    li {
+      margin: 0;
+      display: table-cell;
+      padding: 19px;
+      border-right: 1px solid #eee;
+
+      a {
+        display: block;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #888;
+
+        .count {
+          font-weight: bold;
+          font-size: 2em;
+          margin-bottom: 10px;
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+.admin-categories {
+  ul {
+    list-style: none;
+    li {
+      padding: 10px;
+      font-size: 110%;
+      line-height: 30px;
+      display: block;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+}

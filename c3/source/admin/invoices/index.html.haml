@@ -1,0 +1,102 @@
+.tabbable
+  = partial 'layouts/admin/tabs', :locals => {el_id: 'tab_invoices'}
+
+  .tab-content
+    .tab-pane.active
+      .span8
+        .page-header
+          %h1 Invoices
+
+        %table.table.table-bordered
+          %thead
+            %tr
+              %th{colspan: 4, style: 'text-align: right;'}
+                %a{href: '#'}
+                  Export
+                  %i.icon-share
+            %tr
+              %th Name
+              %th Base Price
+              %th Avail Date
+              %th Options
+              %th Image
+              %th Discount
+              %th Tools
+
+          %tbody
+            - 4.times.each do
+              %tr
+                %td= lorem.name
+                %td
+                  $
+                  = rand(100).ceil
+                %td= lorem.date
+                %td
+                  %ul
+                    - 3.times.each do
+                      %li= link_to lorem.name, '#'
+                    %a.muted{href: '#'} Show more options...
+                    %br/
+                    %a.btn.btn-primary{href: '#'}
+                      %i.icon-plus.icon-white
+                      Add
+
+                %td
+                  No Existing Image
+                  %br/
+                  %a.btn.btn-primary{href: '#'}
+                    %i.icon-camera.icon-white
+                    Add
+                %td
+                  $0
+                  %br/
+                  %a.btn.btn-primary{href: '#'}
+                    %i.icon-time.icon-white
+                    Add
+
+                %td
+                  .btn-group
+                    %a.btn.btn-mini{href: '#'}
+                      %i.icon-pencil
+                      Edit
+                    %a.btn.btn-mini{href: '#'}
+                      %i.icon-share
+                      Show
+                    %a.btn.btn-mini{href: '#'}
+                      %i.icon-remove
+                      Delete
+
+        .pagination
+          %ul
+            %li
+              %a{href: "#"} Prev
+            %li.active
+              %a{href: "#"} 1
+            - (2..5).each do |i|
+              %li
+                %a{href: '#'}= i
+            %li
+              %a{href: "#"} Next
+
+
+      .span4.well
+        .page-header
+          %h3 Filter Invoices
+
+        %form.filter-form.well
+          .control-group
+            %label.control-label Filter By Date
+            .controls
+              %input.input-small{placeholder: 'Start Date'}
+              %input.input-small{placeholder: "End Date"}
+
+          .control-group
+            %label.control-label Sort By
+            .controls
+              %select
+                %option New Invoices
+                %option Old Invoices
+
+          .form-actions
+            %button.btn.btn-primary{type: 'submit'}
+              Filter Orders

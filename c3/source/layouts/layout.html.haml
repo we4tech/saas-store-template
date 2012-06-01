@@ -1,0 +1,71 @@
+!!!5
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %title SaaS Store
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "IDEABase production", :name => "author"}/
+
+    = stylesheet_link_tag 'bootstrap', 'bootstrap-responsive', 'application'
+
+    / Le HTML5 shim, for IE6-8 support of HTML5 elements
+    /[if lt IE 9]
+      %script{src: "http://html5shim.googlecode.com/svn/trunk/html5.js"}/
+  %body
+    = partial 'layouts/top_navigation'
+    .container
+      = yield :content
+
+    .footer-container.container
+      %footer.footer.well
+        %section#footer
+          .span3{:style => "margin-left: 0px"}
+            %h5 Location Map
+            %iframe{:frameborder => "0", :height => "175", :marginheight => "0", :marginwidth => "0", :scrolling => "no", :src => "http://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=22+Beaver+Street,+New+York,+NY&amp;aq=0&amp;oq=22+Beaver+St&amp;sll=37.0625,-95.677068&amp;sspn=54.621153,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=22+Beaver+St,+New+York,+10004&amp;t=m&amp;z=14&amp;ll=40.704874,-74.012314&amp;output=embed", :width => "260"}
+          .span3
+            %h5 Address
+            %address
+              %p
+                22 Beaver Street
+                %br/
+                New York, NY 10004
+              %p
+                %strong P:
+                212-482-0620
+                %br/
+                %strong E:
+                Info@DeliTradersExpress.com
+          .span3
+            %h5 Hours
+            %p
+              Mon - Fri : 6:00AM - 8:30PM
+              %br/
+              Sat & Sun : 7:00AM - 4:00PM
+          .span2
+            %ul.nav.nav-list
+              %li
+                %a{:href => "#"}
+                  %i.icon-eject
+                  Top
+              %li
+                %a{:href => "#"}
+                  %i.icon-info-sign
+                  About Us
+              %li
+                %a{:href => "#"}
+                  %i.icon-globe
+                  Store Location
+              %li
+                %a{:href => "#"}
+                  %i.icon-user
+                  Support
+        .clearfix
+    / Dependent Javascripts
+    = javascript_include_tag 'jquery', 'bootstrap-transition.',
+                             'bootstrap-alert', 'bootstrap-modal',
+                             'bootstrap-dropdown', 'bootstrap-scrollspy.js',
+                             'bootstrap-tab.js', 'bootstrap-tooltip.js',
+                             'bootstrap-popover.js', 'bootstrap-button.js',
+                             'bootstrap-collapse.js', 'bootstrap-carousel.js',
+                             'bootstrap-typeahead.js', 'application.js'

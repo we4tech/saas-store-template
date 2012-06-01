@@ -1,0 +1,39 @@
+%form
+  %fieldset
+    .control-group
+      %label.control-label Name
+      .controls
+        %input.input-xlarge{type: 'text'}
+    .control-group
+      %label.control-label Price
+      .controls
+        %input.input-small{type: 'number', placeholder: '0.0'}
+    .control-group
+      %label.control-label Available from
+      .controls
+        %input.input-small{type: 'date', placeholder: 'Date'}
+        %input.input-small{type: 'date', placeholder: 'Date'}
+
+    .control-group
+      %label.control-label Tax Rate
+      .controls
+        %input.input-small{type: 'text', placeholder: 'Default - 9%'}
+
+    .control-group
+      %label.control-label Options
+      .controls
+        .well
+          %h6 New Option
+          .option
+            %select.input-large
+              %option Option Type
+            %input.input-small{type: 'number', placeholder: "Minimum"}
+            %input.input-small{type: 'number', placeholder: "Maximum"}
+            %input.input-small{type: 'number', placeholder: "Included"}
+
+          %a.btn{href: '#'}
+            %i.icon-plus
+            Add Option
+
+    .form-actions
+      %button.btn.btn-primary{type: 'submit'} Add Item

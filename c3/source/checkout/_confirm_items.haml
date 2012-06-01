@@ -1,0 +1,62 @@
+%h2 Confirm Items
+%p &nbsp;
+
+%table.table.table-striped.checkout-items
+  %thead
+    %tr
+      %th Item
+      %th Quantity
+      %th &nbsp;
+      %th Price
+
+  %tbody
+    - 3.times.each do
+      %tr
+        %td.name
+          = link_to lorem.name, '#'
+        %td.quantity
+          %input.span1{type: 'text', value: (rand * 5).ceil}/
+        %td.multiply
+          x
+        %td.price
+          = (rand * 100).round(2)
+          $
+
+  %tfoot.highlight
+    %tr.other-cost
+      %td &nbsp;
+      %td.quantity.muted
+        10 Pcs
+
+      %td.multiply
+        = "="
+      %td.price
+        $30.00
+
+    %tr.other-cost
+      %td &nbsp;
+      %td.quantity.muted{colspan: 2}
+        10% VAT
+      %td.price
+        $5.00
+
+    %tr.other-cost
+      %td &nbsp;
+      %td.quantity.muted{colspan: 2}
+        Delivery
+      %td.price
+        $5.00
+
+    %tr.total-cost
+      %td.price-head{colspan: 3}
+        %i Total Price:
+
+      %td.price
+        $35.00
+
+
+.form-actions
+  %a.btn.btn-inverse{href: '#'} Checkout Later
+  %a.btn.btn-primary{type: 'button', 'data-trigger' => '#link_delivery'} Next Address &gt;
+
+.clearfix

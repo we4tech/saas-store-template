@@ -1,0 +1,27 @@
+/ Sections
+%section#menu
+  %ul.breadcrumb
+    %li
+      %a{:href => "#"} Home
+      %span.divider /
+    %li.active Food Menu
+  .tabbable.span9
+    .page-header
+      %h1 Food Menu
+
+    %ul.nav.nav-tabs
+      %li.active
+        %a{:href => "#"} Breakfast
+      %li
+        %a{:href => "#"} Lunch
+      %li
+        %a{:href => "#"} Dinner
+    .tab-content
+      #breakfast.food-menu-list
+        %ul.thumbnails
+          - 12.times.each do
+            %li.span3.width_260
+              = partial 'products/product_thumb'
+
+  .span2.food-menu-small-list.fixed
+    = partial 'products/side_menu'

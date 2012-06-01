@@ -1,0 +1,48 @@
+%h2 Delivery Address
+%p &nbsp;
+%fieldset
+  .control-group
+    %label.control-label Name
+    .controls
+      %input.input-xlarge.focused{placeholder: 'Enter First Name'}
+      %input.input-small{placeholder: 'Last Name'}
+
+  .control-group
+    %label.control-label Email
+    .controls
+      .input-prepend
+        %span.add-on @
+        %input.input-xlarge{type: 'email'}
+
+      .clearfix
+      %p.help-block.muted.span4
+        Enter your valid email address.
+        You will receive all delivery information over this address.
+
+  .control-group
+    %label.control-label Country
+    .controls
+      %select.input-xlarge
+
+  .control-group
+    %label.control-label Address
+    .controls
+      %input.input-xlarge
+
+  .control-group
+    %label.control-label Address (line 2)
+    .controls
+      %input.input-xlarge
+
+  .control-group
+    %label.control-label City
+    .controls
+      %select.input-small
+        %option NY
+      %select.input-small
+        %option State
+      %input.input-small{placeholder: 'Zip/Postal Code'}
+
+  .form-actions
+    %a.btn.btn-inverse{:href => "#", 'data-trigger' => '#link_confirm_items'} &lt; Previous Confirm
+    %button.btn.btn-primary{href: '#{button}', 'data-trigger' => '#link_payment'} Next Payment &gt;

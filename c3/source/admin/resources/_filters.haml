@@ -1,0 +1,27 @@
+%form.filter-form.well
+  .control-group
+    %label.control-label Filter By Date
+    .controls
+      %input.input-small{placeholder: 'Start Date'}
+      %input.input-small{placeholder: "End Date"}
+
+  .control-group
+    %label.control-label Filter By Type
+    .controls
+      %label.checkbox
+        %input{type: 'checkbox'}
+        Images
+      %label.checkbox
+        %input{type: 'checkbox'}
+        Documents
+
+  .control-group
+    %label.control-label Sort By
+    .controls
+      %select
+        %option New Invoices
+        %option Old Invoices
+
+  .form-actions
+    %button.btn.btn-primary{type: 'submit'}
+      Filter Orders

@@ -1,0 +1,58 @@
+/ Top Navigation
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{'data-toggle' => "collapse", 'data-target' => ".nav-collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      %a.brand{:href => "#"} Traders Express Deli
+
+      .nav-collapse
+        %ul.nav
+          %li.active
+            %a{:href => "/homepage/"} Home
+          %li
+            %a{:href => "/products/"} Menu
+          %li
+            %a{:href => "#"} Special Offers
+          %li
+            %a{:href => "/reviews"} Reviews
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Contact
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} About Us
+              %li
+                %a{:href => "#"} Store Location
+              %li
+                %a{:href => "#"} Support
+        %form.navbar-search.pull-right
+          %input.span2{:class => "search-query", :placeholder => "Search Menu...", :type => "search"}/
+
+        %ul.nav.pull-right
+          %li
+            %a{:href => '/checkout/'}
+              %i.icon-shopping-cart.icon-white
+              Checkout Your Plate
+              %span.badge.badge-info 4
+          %li.divider-vertical
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %i.icon-user.icon-white
+              Hasan's Profile
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} Previous Orders
+              %li
+                %a{:href => "#"} Settings
+              %li
+                %a{:href => "#"} Logout
+
+    .alert.alert-error.top-notice.fade.in
+      We are currently closed, please visit us with in 5 PM
+      %a.close{'data-dismiss' => "alert", href: "#"} &times;

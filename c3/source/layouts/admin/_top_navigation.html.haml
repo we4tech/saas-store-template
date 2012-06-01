@@ -1,0 +1,108 @@
+/ Top Navigation
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      %a.btn.btn-navbar{'data-toggle' => "collapse", 'data-target' => ".nav-collapse"}
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+
+      %a.brand{:href => "#"} Well Treat Us Store
+
+      .nav-collapse
+        %ul.nav
+          %li
+            %a{:href => "/admin/reviews"}
+              %i.icon-user.icon-white
+              Users
+          %li.dropdown
+            %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => "#"}
+              %i.icon-calendar.icon-white
+              Reports
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{href: '#'} Daily Report
+                %a{href: '#'} Weekly Report
+                %a{href: '#'} Monthly Report
+
+          %li.divider-vertical
+
+          %li.dropdown
+            %a.dropdown-toggle{'data-toggle' => 'dropdown', :href => "#"}
+              %i.icon-wrench.icon-white
+              Settings
+              %b.caret
+
+            %ul.dropdown-menu
+              %li.nav-header Site
+              %li
+                %a{href: '#'}
+                  Navigation
+
+              %li.divider
+              %li.nav-header Manage
+              %li
+                %a{href: '#'}
+                  Collection Types
+              %li
+                %a{href: '#'}
+                  Resource Types
+
+              %li
+                %a{href: '#'}
+                  Category Types
+
+              %li
+                %a{href: '#'}
+                  Filters
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %i.icon-globe.icon-white
+              Pages
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"}
+                  %i.icon-plus
+                  New Page
+              %li
+                %a{:href => "#"}
+                  %i.icon-plus
+                  Edit Master Layout
+              %li.divider
+              %li.nav-header Existing Pages
+              %li
+                %a{:href => "#"}
+                  %i.icon-pencil
+                  About Us
+              %li
+                %a{:href => "#"}
+                  %i.icon-pencil
+                  Store Location
+              %li
+                %a{:href => "#"}
+                  %i.icon-pencil
+                  Support
+
+          %li
+            %button.btn.btn-mini{href: '#', onclick: "window.location='/homepage'"} Visit Site
+
+        %ul.nav.pull-right
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              %i.icon-user.icon-white
+              Hasan's Profile
+              %b.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} Previous Orders
+              %li
+                %a{:href => "#"} Settings
+              %li
+                %a{:href => "#"} Logout
+
+    .alert.alert-error.top-notice.fade.in.hide
+      We are currently closed, please visit us with in 5 PM
+      %a.close{'data-dismiss' => "alert", href: "#"} &times;

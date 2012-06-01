@@ -1,0 +1,50 @@
+/ Big Banner
+%header#homepage_banner
+  #myCarousel.carousel
+    / Carousel items
+    .carousel-inner
+      .active.item
+        .hero-unit{:style => "background:url(../images/banner.png) no-repeat 0 20%;"}
+          .row
+            .offset1
+              %h1 Welcome To Traders Express Deli
+              %p
+              %p.lead Check out our exclusive food menu
+              %p
+                %a.btn.btn-inverse.btn-large{:href => "/products"}
+                  Order NOW!
+      .item
+        .hero-unit{:style => "background:url(../images/banner_n2.png) no-repeat 0 20%;"}
+          .row
+            .offset1
+              %h1 Welcome To Traders Express Deli
+              %p
+              %p.lead Check out our exclusive food menu
+              %p
+                %a.btn.btn-inverse.btn-large{:href => "/products"}
+                  Order NOW!
+    / Carousel nav
+    %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} &lsaquo;
+    %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} &rsaquo;
+
+/ Alert message
+.alert.alert-info{:style => "display:none"}
+  %a.close{"data-dismiss" => "alert", :href => "#"} &times;
+  We are open now!
+
+/ Sections
+%section#special_offers.food-menu-list
+  .page-header
+    %h1 Special Offers
+  %ul.thumbnails
+    - 4.times.each do
+      %li.span3.width_260
+        = partial 'products/product_thumb', :locals => {discount: true}
+
+%section#featured_meals.food-menu-list
+  .page-header
+    %h1 Featured Meals
+  %ul.thumbnails
+    - 4.times.each do
+      %li.span3.width_260
+        = partial 'products/product_thumb'
