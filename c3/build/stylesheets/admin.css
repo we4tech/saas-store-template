@@ -1,0 +1,45 @@
+/* line 1, admin.css.scss */
+body {
+  margin-top: 60px; }
+
+/* line 5, admin.css.scss */
+.summary {
+  width: 100%;
+  display: table; }
+  /* line 9, admin.css.scss */
+  .summary ul {
+    list-style: none;
+    display: table-row; }
+    /* line 13, admin.css.scss */
+    .summary ul li {
+      margin: 0;
+      display: table-cell;
+      padding: 19px;
+      border-right: 1px solid #eee; }
+      /* line 19, admin.css.scss */
+      .summary ul li a {
+        display: block;
+        font-size: 1.4em;
+        text-transform: uppercase;
+        text-align: center;
+        color: #888; }
+        /* line 26, admin.css.scss */
+        .summary ul li a .count {
+          font-weight: bold;
+          font-size: 2em;
+          margin-bottom: 10px;
+          color: #000; }
+
+/* line 38, admin.css.scss */
+.admin-categories ul {
+  list-style: none; }
+  /* line 40, admin.css.scss */
+  .admin-categories ul li {
+    padding: 10px;
+    font-size: 110%;
+    line-height: 30px;
+    display: block; }
+
+/* line 49, admin.css.scss */
+.footer {
+  text-align: center; }

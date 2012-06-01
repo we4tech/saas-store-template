@@ -1,0 +1,277 @@
+/* Define mixins */
+/* line 21, application.css.scss */
+body {
+  margin-top: 60px; }
+
+/* line 26, application.css.scss */
+#homepage_banner h1 {
+  font-size: 40px;
+  color: #fff;
+  text-shadow: 0px 2px 3px #000; }
+/* line 32, application.css.scss */
+#homepage_banner p {
+  color: #f0f0f0;
+  text-shadow: 0px 2px 3px #000; }
+/* line 37, application.css.scss */
+#homepage_banner .btn-large {
+  font-size: 40px; }
+
+/* line 46, application.css.scss */
+.pull-center {
+  text-align: center; }
+
+/* line 52, application.css.scss */
+.food-menu-list .thumbnails .width_260 {
+  width: 260px; }
+/* line 56, application.css.scss */
+.food-menu-list .thumbnails .thumbnail {
+  padding: 0;
+  height: 350px;
+  box-shadow: 0 2px 3px #ccc; }
+  /* line 61, application.css.scss */
+  .food-menu-list .thumbnails .thumbnail img {
+    height: 180px; }
+  /* line 65, application.css.scss */
+  .food-menu-list .thumbnails .thumbnail > .badge {
+    position: absolute;
+    font-size: 20px;
+    box-shadow: 0px 2px 3px #000;
+    text-shadow: 0px 2px 3px #000;
+    margin-top: 10px;
+    font-weight: normal;
+    padding: 5px;
+    margin-left: 10px;
+    color: #fff;
+    opacity: 0.7; }
+  /* line 69, application.css.scss */
+  .food-menu-list .thumbnails .thumbnail p {
+    height: 55px; }
+  /* line 73, application.css.scss */
+  .food-menu-list .thumbnails .thumbnail .form-inline {
+    position: relative;
+    bottom: 0; }
+    /* line 77, application.css.scss */
+    .food-menu-list .thumbnails .thumbnail .form-inline .price {
+      font-size: 18px; }
+    /* line 81, application.css.scss */
+    .food-menu-list .thumbnails .thumbnail .form-inline .input-small {
+      width: 50px; }
+
+/* line 90, application.css.scss */
+.food-menu-side-list .thumbnails .thumbnail > .badge {
+  position: absolute;
+  font-size: 20px;
+  box-shadow: 0px 2px 3px #000;
+  text-shadow: 0px 2px 3px #000;
+  margin-top: 10px;
+  font-weight: normal;
+  padding: 5px;
+  margin-left: 10px;
+  color: #fff;
+  opacity: 0.7; }
+
+/* line 95, application.css.scss */
+#menu .tabbable {
+  margin-left: 0; }
+
+/* line 100, application.css.scss */
+.food-menu-small-list .well {
+  padding: 5px; }
+/* line 104, application.css.scss */
+.food-menu-small-list .price {
+  font-size: 20px;
+  margin-right: 5px;
+  margin-top: 5px;
+  color: #888; }
+/* line 111, application.css.scss */
+.food-menu-small-list .input-small {
+  width: 30px;
+  margin-right: 10px; }
+
+/* line 118, application.css.scss */
+.checkout-items {
+  font-size: 120%; }
+  /* line 122, application.css.scss */
+  .checkout-items tr td {
+    vertical-align: middle; }
+  /* line 126, application.css.scss */
+  .checkout-items tr .quantity {
+    width: 60px;
+    text-align: right;
+    font-size: 120%; }
+    /* line 131, application.css.scss */
+    .checkout-items tr .quantity input {
+      text-align: right;
+      font-size: 120%; }
+  /* line 137, application.css.scss */
+  .checkout-items tr .multiply {
+    font-size: 120%;
+    width: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: #888; }
+  /* line 145, application.css.scss */
+  .checkout-items tr .price {
+    text-align: right;
+    width: 70px;
+    font-weight: bold; }
+  /* line 153, application.css.scss */
+  .checkout-items .total-cost .price-head {
+    text-align: right;
+    border-top: 2px solid red; }
+  /* line 158, application.css.scss */
+  .checkout-items .total-cost .price {
+    text-align: right;
+    border-top: 2px solid red; }
+  /* line 164, application.css.scss */
+  .checkout-items .total-sum td {
+    border-top: 2px solid #ccc; }
+  /* line 168, application.css.scss */
+  .checkout-items tfoot.highlight {
+    background: lightYellow; }
+  /* line 173, application.css.scss */
+  .checkout-items .other-cost .quantity {
+    font-size: 90%; }
+
+/* line 180, application.css.scss */
+.food-menu-side-list .thumbnails {
+  margin-left: 0; }
+  /* line 183, application.css.scss */
+  .food-menu-side-list .thumbnails .thumbnail {
+    width: 230px;
+    margin-bottom: 5px; }
+    /* line 187, application.css.scss */
+    .food-menu-side-list .thumbnails .thumbnail p {
+      display: none; }
+    /* line 191, application.css.scss */
+    .food-menu-side-list .thumbnails .thumbnail .well {
+      padding: 3px;
+      text-align: center; }
+      /* line 195, application.css.scss */
+      .food-menu-side-list .thumbnails .thumbnail .well .btn {
+        margin-top: 5px; }
+    /* line 200, application.css.scss */
+    .food-menu-side-list .thumbnails .thumbnail .form-inline .input-small {
+      width: 40px; }
+
+/* line 208, application.css.scss */
+.drop-shadow {
+  box-shadow: 0px 0px 5px #fff; }
+
+/* line 212, application.css.scss */
+.navbar .top-notice {
+  margin: 0;
+  font-size: 120%;
+  text-align: center;
+  border-radius: 0; }
+
+/* line 220, application.css.scss */
+.thumbnail .box-add-to-cart {
+  position: absolute;
+  margin-top: -190px;
+  margin-left: 10px;
+  background: transparent;
+  color: #fff;
+  width: 620px; }
+  /* line 228, application.css.scss */
+  .thumbnail .box-add-to-cart .form-inline {
+    background: #f0f0f0;
+    color: #000;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border: 5px solid #000;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 100px;
+    box-shadow: 2px 2px 20px #000; }
+    /* line 241, application.css.scss */
+    .thumbnail .box-add-to-cart .form-inline .quantity {
+      border: 2px solid #000;
+      margin-bottom: 10px; }
+    /* line 246, application.css.scss */
+    .thumbnail .box-add-to-cart .form-inline .price {
+      font-size: 300%; }
+
+/* line 253, application.css.scss */
+.tools-nav {
+  background: #f0f0f0;
+  margin-top: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+  box-shadow: 1px 1px 20px #aaa;
+  border: 1px solid #bababa;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 3px; }
+  /* line 266, application.css.scss */
+  .tools-nav ul .nav-header {
+    margin-right: 10px; }
+  /* line 270, application.css.scss */
+  .tools-nav ul .prep-time {
+    margin-top: 3px;
+    font-weight: bold; }
+  /* line 275, application.css.scss */
+  .tools-nav ul li {
+    float: left;
+    margin-right: 10px; }
+    /* line 280, application.css.scss */
+    .tools-nav ul li a:hover {
+      background: transparent; }
+
+/* line 289, application.css.scss */
+.overflow-image img {
+  margin-top: 10px;
+  margin-left: -10px;
+  box-shadow: 1px 1px 20px #aaa;
+  border-radius: 3px; }
+
+/* line 298, application.css.scss */
+.related-photos .thumbnails, .related-items .thumbnails {
+  margin-left: 0; }
+  /* line 301, application.css.scss */
+  .related-photos .thumbnails li, .related-items .thumbnails li {
+    float: left;
+    width: 100px;
+    height: 70px;
+    margin-left: 5px; }
+    /* line 307, application.css.scss */
+    .related-photos .thumbnails li .thumbnail, .related-items .thumbnails li .thumbnail {
+      border: 0;
+      box-shadow: 1px 1px 10px #aaa; }
+      /* line 311, application.css.scss */
+      .related-photos .thumbnails li .thumbnail img, .related-items .thumbnails li .thumbnail img {
+        width: 100px;
+        height: 70px; }
+
+/* line 322, application.css.scss */
+.related-items .thumbnails li {
+  height: 100px; }
+  /* line 325, application.css.scss */
+  .related-items .thumbnails li .thumbnail {
+    background: #000; }
+    /* line 328, application.css.scss */
+    .related-items .thumbnails li .thumbnail .caption {
+      font-size: 80%;
+      padding: 3px;
+      color: #fff; }
+    /* line 334, application.css.scss */
+    .related-items .thumbnails li .thumbnail .price {
+      position: absolute;
+      margin-top: -30px;
+      margin-left: 5px;
+      color: #fff;
+      font-size: 200%;
+      text-shadow: 0px 2px 3px #000; }
+
+/* line 348, application.css.scss */
+.tags .label {
+  margin-right: 5px; }
+  /* line 350, application.css.scss */
+  .tags .label a {
+    color: #fff; }
+
+/* line 357, application.css.scss */
+#special_offers .thumbnail {
+  background: #000; }

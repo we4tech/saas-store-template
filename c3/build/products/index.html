@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <title>SaaS Store</title>
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <meta content='' name='description' />
+    <meta content='IDEABase production' name='author' />
+    <link href="../stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/bootstrap-responsive.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../stylesheets/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js' />
+    <![endif]-->
+  </head>
+  <body>
+    <!-- Top Navigation -->
+<div class='navbar navbar-fixed-top'>
+  <div class='navbar-inner'>
+    <div class='container'>
+      <a class='btn btn-navbar' data-target='.nav-collapse' data-toggle='collapse'>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+        <span class='icon-bar'></span>
+      </a>
+      <a class='brand' href='#'>Traders Express Deli</a>
+      <div class='nav-collapse'>
+        <ul class='nav'>
+          <li class='active'>
+            <a href='/homepage/'>Home</a>
+          </li>
+          <li>
+            <a href='/products/'>Menu</a>
+          </li>
+          <li>
+            <a href='#'>Special Offers</a>
+          </li>
+          <li>
+            <a href='/reviews'>Reviews</a>
+          </li>
+          <li class='dropdown'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              Contact
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>About Us</a>
+              </li>
+              <li>
+                <a href='#'>Store Location</a>
+              </li>
+              <li>
+                <a href='#'>Support</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <form class='navbar-search pull-right'>
+          <input class='search-query span2' placeholder='Search Menu...' type='search' />
+        </form>
+        <ul class='nav pull-right'>
+          <li>
+            <a href='/checkout/'>
+              <i class='icon-shopping-cart icon-white'></i>
+              Checkout Your Plate
+              <span class='badge badge-info'>4</span>
+            </a>
+          </li>
+          <li class='divider-vertical'></li>
+          <li class='dropdown'>
+            <a class='dropdown-toggle' data-toggle='dropdown' href='#'>
+              <i class='icon-user icon-white'></i>
+              Hasan's Profile
+              <b class='caret'></b>
+            </a>
+            <ul class='dropdown-menu'>
+              <li>
+                <a href='#'>Previous Orders</a>
+              </li>
+              <li>
+                <a href='#'>Settings</a>
+              </li>
+              <li>
+                <a href='#'>Logout</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class='alert alert-error top-notice fade in'>
+      We are currently closed, please visit us with in 5 PM
+      <a class='close' data-dismiss='alert' href='#'>&times;</a>
+    </div>
+  </div>
+</div>
+    <div class='container'>
+      <!-- Sections -->
+      <section id='menu'>
+        <ul class='breadcrumb'>
+          <li>
+            <a href='#'>Home</a>
+            <span class='divider'>/</span>
+          </li>
+          <li class='active'>Food Menu</li>
+        </ul>
+        <div class='tabbable span9'>
+          <div class='page-header'>
+            <h1>Food Menu</h1>
+          </div>
+          <ul class='nav nav-tabs'>
+            <li class='active'>
+              <a href='#'>Breakfast</a>
+            </li>
+            <li>
+              <a href='#'>Lunch</a>
+            </li>
+            <li>
+              <a href='#'>Dinner</a>
+            </li>
+          </ul>
+          <div class='tab-content'>
+            <div class='food-menu-list' id='breakfast'>
+              <ul class='thumbnails'>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f3.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Carly Middleton</a></h5>
+                      <p class='muted'>Odit dolores perspiciatis labore</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f3.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Stephanie Pickett</a></h5>
+                      <p class='muted'>Architecto dicta voluptatem aut qui laborum consequatur</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f2.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Billy Becker</a></h5>
+                      <p class='muted'>Molestiae et deserunt dolor delectus nisi</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f3.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Angelina Sharpe</a></h5>
+                      <p class='muted'>Voluptates qui atque voluptas aliquam natus molestiae</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f5.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Madeline Sutton</a></h5>
+                      <p class='muted'>Omnis ipsum nostrum dolorem excepturi qui aspernatur ad</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f3.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Arturo Cain</a></h5>
+                      <p class='muted'>Aut nesciunt molestiae earum rem sint repellendus dolorem...</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f5.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Jackie Tilley</a></h5>
+                      <p class='muted'>Veritatis omnis necessitatibus est nisi beatae voluptates...</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f1.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Nia May</a></h5>
+                      <p class='muted'>Consequatur culpa iusto esse voluptatibus doloribus nihil...</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f2.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Sheryl MacDonald</a></h5>
+                      <p class='muted'>Mollitia unde voluptas et minus incidunt</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f3.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Maggie Kennedy</a></h5>
+                      <p class='muted'>Asperiores voluptatem quia modi aut tenetur adipisci</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f2.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Kendrick Byrne</a></h5>
+                      <p class='muted'>Sit accusamus nobis voluptas ipsam sed totam</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+                <li class='span3 width_260'>
+                  <div class='thumbnail'>
+                    <img src="../images/f4.jpg" />
+                    <div class='caption'>
+                      <h5><a href="/products/show.haml">Johnnie Perkins</a></h5>
+                      <p class='muted'>Quod molestias possimus ratione libero voluptas</p>
+                      <form class='form-inline well'>
+                        <strong class='price'>20$</strong>
+                        <i class='icon-remove'></i>
+                        <input class='input-small' placeholder='Quantity' size='2' type='number' />
+                        <button class='btn btn-small btn-inverse' type='submit'>
+                          Add To Plate
+                        </button>
+                      </form>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class='span2 food-menu-small-list fixed'>
+          <div class='page-header'>
+            <h3>Your Plate (5)</h3>
+          </div>
+          <form>
+            <div class='well'>
+              <h4>
+                <a href='#'>
+                  Chicken Sandwich
+                </a>
+              </h4>
+              <p></p>
+              <div>
+                <span class='price pull-left'>10$ x</span>
+                <input class='pull-left input-small' type='number' value='1' />
+                <a class='btn btn-small btn-danger' href='#'>
+                  <i class='icon-remove icon-white'></i>
+                </a>
+              </div>
+              <div class='clearfix'></div>
+            </div>
+            <div class='well'>
+              <h4>
+                <a href='#'>
+                  Chicken Sandwich
+                </a>
+              </h4>
+              <p></p>
+              <div>
+                <span class='price pull-left'>10$ x</span>
+                <input class='pull-left input-small' type='number' value='1' />
+                <a class='btn btn-small btn-danger' href='#'>
+                  <i class='icon-remove icon-white'></i>
+                </a>
+              </div>
+              <div class='clearfix'></div>
+            </div>
+            <div class='well'>
+              <h4>
+                <a href='#'>
+                  Chicken Sandwich
+                </a>
+              </h4>
+              <p></p>
+              <div>
+                <span class='price pull-left'>10$ x</span>
+                <input class='pull-left input-small' type='number' value='1' />
+                <a class='btn btn-small btn-danger' href='#'>
+                  <i class='icon-remove icon-white'></i>
+                </a>
+              </div>
+              <div class='clearfix'></div>
+            </div>
+            <hr />
+            <div class='alert alert-block alert-info fade in'>
+              <p>
+                <h3 class='pull-right'>
+                  <strong>Total:</strong>
+                  $100
+                </h3>
+              </p>
+              <div class='clearfix'></div>
+            </div>
+            <a class='btn btn-primary pull-right' href='checkout.html'>
+              <i class='icon-shopping-cart icon-white'></i>
+              Quick Checkout
+            </a>
+          </form>
+        </div>
+      </section>
+    </div>
+    <div class='footer-container container'>
+      <footer class='footer well'>
+        <section id='footer'>
+          <div class='span3' style='margin-left: 0px'>
+            <h5>Location Map</h5>
+            <iframe frameborder='0' height='175' marginheight='0' marginwidth='0' scrolling='no' src='http://www.google.com/maps?f=q&amp;amp;source=s_q&amp;amp;hl=en&amp;amp;geocode=&amp;amp;q=22+Beaver+Street,+New+York,+NY&amp;amp;aq=0&amp;amp;oq=22+Beaver+St&amp;amp;sll=37.0625,-95.677068&amp;amp;sspn=54.621153,114.169922&amp;amp;ie=UTF8&amp;amp;hq=&amp;amp;hnear=22+Beaver+St,+New+York,+10004&amp;amp;t=m&amp;amp;z=14&amp;amp;ll=40.704874,-74.012314&amp;amp;output=embed' width='260'></iframe>
+          </div>
+          <div class='span3'>
+            <h5>Address</h5>
+            <address>
+              <p>
+                22 Beaver Street
+                <br />
+                New York, NY 10004
+              </p>
+              <p>
+                <strong>P:</strong>
+                212-482-0620
+                <br />
+                <strong>E:</strong>
+                Info@DeliTradersExpress.com
+              </p>
+            </address>
+          </div>
+          <div class='span3'>
+            <h5>Hours</h5>
+            <p>
+              Mon - Fri : 6:00AM - 8:30PM
+              <br />
+              Sat & Sun : 7:00AM - 4:00PM
+            </p>
+          </div>
+          <div class='span2'>
+            <ul class='nav nav-list'>
+              <li>
+                <a href='#'>
+                  <i class='icon-eject'></i>
+                  Top
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='icon-info-sign'></i>
+                  About Us
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='icon-globe'></i>
+                  Store Location
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='icon-user'></i>
+                  Support
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class='clearfix'></div>
+      </footer>
+    </div>
+    <!-- Dependent Javascripts -->
+    <script src="../javascripts/jquery.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-transition..js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-alert.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-modal.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-dropdown.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-scrollspy.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-tab.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-tooltip.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-popover.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-button.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-collapse.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-carousel.js" type="text/javascript"></script>
+    <script src="../javascripts/bootstrap-typeahead.js" type="text/javascript"></script>
+    <script src="../javascripts/application.js" type="text/javascript"></script>
+  </body>
+</html>
